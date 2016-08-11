@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+dirs=(lib doc man bin sbin share etc)
+for dir in ${dirs[@]}; do
+    mkdir -p $(pwd)/_build/ocamlfind/$dir
+done
+
+read -d '' findlibconf <<EOF
+destdir="$(pwd)/_build/ocamlfind/lib"
+path="$FINDLIB"
+ocamlc="ocamlc.opt"
+ocamlopt="ocamlopt.opt"
+ocamldep="ocamldep.opt"
+ocamldoc="ocamldoc.opt"
+EOF
+echo -e $findlibconf > $(pwd)/_build/ocamlfind/findlib.conf
