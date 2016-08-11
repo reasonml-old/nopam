@@ -13,4 +13,4 @@ ocamlopt="ocamlopt.opt"
 ocamldep="ocamldep.opt"
 ocamldoc="ocamldoc.opt"
 EOF
-echo -e $findlibconf > $(pwd)/_build/ocamlfind/findlib.conf
+echo -e $findlibconf > $(pwd)/_build/ocamlfind/lib/findlib.conf
