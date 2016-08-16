@@ -1,7 +1,10 @@
 {
     "name": "nopam",
     "version": "0.0.1",
-    "bin" : {"nopam" : "./nopam"},
+    "bin" : {
+        "nopam" : "./nopam",
+        "opam" : "./opam"
+    },
     "exportedEnvVars": {
         "OCAMLFIND_CONF": {
             "val": "$(pwd)/_build/ocamlfind/lib/findlib.conf",
