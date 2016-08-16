@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# A fake opam program because some dependencies use "$(opam config var prefix)" in their build step
+
+eval echo '$'opam_$3
