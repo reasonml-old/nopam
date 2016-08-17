@@ -5,6 +5,8 @@ for dir in ${dirs[@]}; do
     mkdir -p $(pwd)/_build/ocamlfind/$dir
 done
 
+ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
+
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
 path="$FINDLIB"
