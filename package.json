@@ -4,7 +4,7 @@
   "bin": {
     "nopam": "./nopam",
     "opam": "./opam",
-    "injeccOpamEnvs": "./injectOpamEnvs"
+    "injectOpamEnvs": "./injectOpamEnvs"
   },
   "exportedEnvVars": {
     "OCAMLFIND_CONF": {
