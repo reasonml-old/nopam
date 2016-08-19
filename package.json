@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "bin": {
     "nopam": "./nopam",
-    "opam": "./opam"
-    "injecctOpamEnvs": "./injecctOpamEnvs"
+    "opam": "./opam",
+    "injeccOpamEnvs": "./injectOpamEnvs"
   },
   "exportedEnvVars": {
     "OCAMLFIND_CONF": {
