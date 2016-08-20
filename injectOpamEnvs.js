@@ -9,6 +9,14 @@ function trueVariable() {
         "val": "true"
     }
 }
+
+function enableVariable() {
+    return {
+        "global": true,
+        "globalCollisionBehavior": "clobber",
+        "val": "enable"
+    }
+}
 function injectEnvs(filename) {
     console.log(filename)
     var pkg = JSON.parse(
@@ -19,7 +27,7 @@ function injectEnvs(filename) {
         pkg["exportedEnvVars"] = {};
     }
     pkg["exportedEnvVars"][name + "_installed"] = trueVariable();
-    pkg["exportedEnvVars"][name + "_enable"] = trueVariable();
+    pkg["exportedEnvVars"][name + "_enable"] = enableVariable();
     fs.writeFileSync(filename, JSON.stringify(pkg, null, 2))
 }
 
