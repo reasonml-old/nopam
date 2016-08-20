@@ -14,7 +14,7 @@ function injectEnvs(filename) {
     var pkg = JSON.parse(
         fs.readFileSync(filename, 'utf8')
     );
-    name = pkg["name"].replace("-", "_");
+    name = pkg["name"].replace(/-/g, "_");
     if (pkg["exportedEnvVars"] == undefined) {
         pkg["exportedEnvVars"] = {};
     }
