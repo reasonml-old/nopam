@@ -5,7 +5,10 @@ for dir in ${dirs[@]}; do
     mkdir -p $(pwd)/_build/ocamlfind/$dir
 done
 
-ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
+if [ -z "$OCAMLLIB" ]
+then
+    ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
+fi  
 
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
