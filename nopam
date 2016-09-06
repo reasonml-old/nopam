@@ -5,7 +5,7 @@ for dir in ${dirs[@]}; do
     mkdir -p $(pwd)/_build/ocamlfind/$dir
 done
 
-if [ -z "$OCAMLLIB" ]
+if [ ! -z "$OCAMLLIB" ]
 then
     ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
 fi  
