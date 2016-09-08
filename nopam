@@ -16,7 +16,7 @@ fi
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
 path="$FINDLIB"
-ocamlc="ocamlc.opt"
+ocamlc="ocamlc.opt -g"
 ocamlopt="ocamlopt.opt"
 ocamldep="ocamldep.opt"
 ocamldoc="ocamldoc.opt"
