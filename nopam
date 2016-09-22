@@ -13,6 +13,8 @@ then
     ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
 fi  
 
+git init 2>/dev/null
+
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
 path="$FINDLIB"
