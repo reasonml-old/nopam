@@ -11,11 +11,7 @@ done
 if [ ! -z "$OCAMLLIB" ]
 then
     ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
-fi  
-
-git init 2>/dev/null
-git commit -m "$version" --allow-empty
-git tag -a $version -m "$version"
+fi
 
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
