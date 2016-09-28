@@ -14,6 +14,8 @@ then
 fi  
 
 git init 2>/dev/null
+git commit -m "$version" --allow-empty
+git tag -a $version -m "$version"
 
 read -d '' findlibconf <<EOF
 destdir="$(pwd)/_build/ocamlfind/lib"
