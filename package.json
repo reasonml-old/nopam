@@ -4,6 +4,7 @@
   "bin": {
     "nopam": "./nopam",
     "opam": "./opam",
+    "git": "./git",
     "injectOpamEnvs": "./injectOpamEnvs"
   },
   "exportedEnvVars": {
