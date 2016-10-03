@@ -4,7 +4,6 @@
   "bin": {
     "nopam": "./nopam",
     "opam": "./opam",
-    "git": "./git",
     "injectOpamEnvs": "./injectOpamEnvs"
   },
   "exportedEnvVars": {
@@ -13,6 +12,12 @@
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
+    },
+    "PATH": {
+      "global": true,
+      "resolveAsRelativePath": true,
+      "globalCollisionBehavior": "joinPath",
+      "val": "./"
     },
     "opam_prefix": {
       "val": "$(pwd)/./_build/ocamlfind",
