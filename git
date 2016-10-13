@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# A fake git program
-
-echo "git is not supported in virtual environment for package installations" >& 2
-
-exit 1
