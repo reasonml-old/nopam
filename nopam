@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# remove previously installed artifacts
-rm -rf $(pwd)/_build/ocamlfind
-
 dirs=(lib doc man bin sbin share etc)
 for dir in ${dirs[@]}; do
     mkdir -p $(pwd)/_build/ocamlfind/$dir
