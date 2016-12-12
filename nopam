@@ -2,20 +2,20 @@
 
 dirs=(lib doc man bin sbin share etc)
 for dir in ${dirs[@]}; do
-    mkdir -p $(pwd)/_build/ocamlfind/$dir
+    mkdir -p $__dependencyEnv_sandbox/_build/ocamlfind/$dir
 done
 
 if [ ! -z "$OCAMLLIB" ]
 then
-    ln -sf $OCAMLLIB $(pwd)/_build/ocamlfind/lib/ocaml
+    ln -sf $OCAMLLIB $__dependencyEnv_sandbox/_build/ocamlfind/lib/ocaml
 fi
 
 read -d '' findlibconf <<EOF
-destdir="$(pwd)/_build/ocamlfind/lib"
+destdir="$__dependencyEnv_sandbox/_build/ocamlfind/lib"
 path="$FINDLIB"
 ocamlc="ocamlc.opt"
 ocamlopt="ocamlopt.opt"
 ocamldep="ocamldep.opt"
 ocamldoc="ocamldoc.opt"
 EOF
-echo -e $findlibconf > $(pwd)/_build/ocamlfind/lib/findlib.conf
+echo -e $findlibconf > $__dependencyEnv_sandbox/_build/ocamlfind/lib/findlib.conf

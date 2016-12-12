@@ -8,7 +8,7 @@
   },
   "exportedEnvVars": {
     "OCAMLFIND_CONF": {
-      "val": "$(pwd)/_build/ocamlfind/lib/findlib.conf",
+      "val": "$__dependencyEnv_sandbox/_build/ocamlfind/lib/findlib.conf",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
@@ -20,37 +20,37 @@
       "val": "./"
     },
     "opam_prefix": {
-      "val": "$(pwd)/./_build/ocamlfind",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
     },
     "opam_bin": {
-      "val": "$(pwd)/./_build/ocamlfind/bin",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind/bin",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
     },
     "opam_lib": {
-      "val": "$(pwd)/./_build/ocamlfind/lib",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind/lib",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
     },
     "opam_sbin": {
-      "val": "$(pwd)/./_build/ocamlfind/sbin",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind/sbin",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
     },
     "opam_doc": {
-      "val": "$(pwd)/./_build/ocamlfind/doc",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind/doc",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
     },
     "opam_man": {
-      "val": "$(pwd)/./_build/ocamlfind/man",
+      "val": "$__dependencyEnv_sandbox/./_build/ocamlfind/man",
       "resolveAsRelativePath": false,
       "global": true,
       "globalCollisionBehavior": "clobber"
